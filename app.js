@@ -42,3 +42,14 @@ if(anime === 'yes' anime === 'y') {
 } else {
   alert( user + ' I have seen more terrible anime then I care to confess');
   //console.log('Yes I have seen over 100 anime')
+
+  var pet = prompt('Dog I have a dog?')
+  pet = pet.toLocaleLowerCase();
+
+  if(pet === 'no' || pet === 'n') {
+      alert('Your right, I have a cat!');
+    } else {
+        alert('You guessed wrong, a dog needs more room and attention then I can give.');
+        //console.log('No, I do not have a dog')
+  }
+alert('Well ' + user + ' I hope you had fun getting to know me!' )
