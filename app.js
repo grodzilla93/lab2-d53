@@ -1,11 +1,14 @@
-'use strict'
+'use strict';
 
-var hello = prompt("hey, ready to know me better? ");
+var user = prompt('Hello! who are you?');
+console.log('user'+ user);
+
+var hello = prompt('hey,' + user + 'ready to know me better? ');
 
 hello = hello.toLowerCase();
 
-if(hello === "yes") {
-  alert("gee thats a great attitude");
+if(hello === 'yes') {
+  alert('gee thats a great attitude');
 } else {
-  alert("sucks.. have fun!");
+  alert('sucks.. have fun!');
 }
