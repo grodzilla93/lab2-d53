@@ -55,20 +55,40 @@
 //   alert('You guessed wrong, a dog needs more room and attention then I can give.');
 //   //console.log('No, I do not have a dog')
 // }
-var attempt = 4;
-var q6answer = 0;
-while ( attempt > 0){
-  var guess = prompt('I am thinking of a number that is Ten or less, take 4 chances to see if you can guess it!');
-  guess = Math.sign(guess);
-  console.log(guess );
-  if (guess === q6answer){
-    alert('Thats right! Us coders start at zero');
-    break;
-  } else if(guess < 0) {
-    alert('Too low, try looking around positive intergers');
-  } else {
-    alert('You are guessing too high, try toward the beginning');
+// var attempt = 4;
+// var q6answer = 0;
+// while ( attempt > 0){
+//   var guess = prompt('I am thinking of a number that is Ten or less, take 4 chances to see if you can guess it!');
+//   guess = Math.sign(guess);
+//   console.log(guess );
+//   if (guess === q6answer){
+//     alert('Thats right! Us coders start at zero');
+//     break;
+//   } else if(guess < 0) {
+//     alert('Too low, try looking around positive intergers');
+//   } else {
+//     alert('You are guessing too high, try toward the beginning');
+//   }
+// }
+
+var favanime =['Berserk','Dororo', 'Cowboy Bebop','Kekkai Sensen','Devilman Crybaby' ];
+var q7answer = 0;
+var q7wrong = false;
+while (q7answer>6 && !q7wrong){
+  var q7 = prompt('I love watching anime, why don \'t you take a crack at guessing what one of my favorites might be').toLocaleLowerCase;
+  for (var i=0; i< favanime.length; i++){
+    if (q7 === favanime[i]){
+      console.log('You got it correct');
+      q7wrong = true;
+      i = favanime.length;
+    }
+  }
+
+  if(!q7wrong){
+    alert('You failed, shameful display');
+    q7answer++;
+  } else if (q7wrong){
+    alert('You guessed right! good job');
   }
 }
-
 // alert('Well ' + user + ' I hope you had fun getting to know me!' );
