@@ -3,3 +3,5 @@ assignment started oct1 2019
 About Me guessing game
 added top 10 list
 lists of my school and work history
+Driver: Charles Glass
+Navigator: Wyatt Grodzins
