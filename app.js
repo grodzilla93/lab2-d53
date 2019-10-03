@@ -55,16 +55,20 @@
 //   alert('You guessed wrong, a dog needs more room and attention then I can give.');
 //   //console.log('No, I do not have a dog')
 // }
-var attempt = 4
+var attempt = 4;
 var q6answer = 0;
-var guess = prompt('I am thinking of a number that is Ten or less, take 4 chances to see if you can guess it!');
 while ( attempt > 0){
-  
-if (guess === q6answer || attempt ===4){
-  alert('Thats right! Us coders start at zero');
-  break;
-} //else if() {
+  var guess = prompt('I am thinking of a number that is Ten or less, take 4 chances to see if you can guess it!');
+  guess = Math.sign(guess);
+  console.log(guess );
+  if (guess === q6answer){
+    alert('Thats right! Us coders start at zero');
+    break;
+  } else if(guess < 0) {
+    alert('Too low, try looking around positive intergers');
+  } else {
+    alert('You are guessing too high, try toward the beginning');
+  }
 }
-
 
 // alert('Well ' + user + ' I hope you had fun getting to know me!' );
